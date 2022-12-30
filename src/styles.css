@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+  min-width: 320px;
+}
+body{
+  background-color: #0B090A;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+*::selection{
+  color: white;
+  background: #CD0C2B;
+}
+
+
+/* ----------scrolbar-------- */
+/* ----------mozilla-firefox-------- */
+*{
+  scrollbar-color: #f72584c0 #282828;
+  scrollbar-width: thin;
+}
+
+/* ----------chrome-------- */
+*::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #282828;
+}
+
+*::-webkit-scrollbar
+{
+  width: 12px;
+  height: 12px;
+  background-color: black;
+}
+
+*::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #f72584cc;
+}
+*:hover::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: gray;
+}
+
