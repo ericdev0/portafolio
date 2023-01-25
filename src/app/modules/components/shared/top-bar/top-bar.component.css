@@ -1,0 +1,98 @@
+.topBar_container{
+    /* border: 1px solid orange; */
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexMenu_icon{
+    position: absolute;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    background-color: snow;
+    mask: url('../../../../../assets/icons/menu-svgrepo-com.svg') no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    display: none;
+}
+.indexMenu_icon:hover{
+    background-color: #4CC9F0;
+    cursor: pointer;
+}
+.indexMenu_icon:active{
+    background-color: #4CC9F0;
+    filter: brightness(1.3);
+}
+
+.indexLinks_wrapper{
+    /* border: 1px solid red; */
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.i_linkButton{
+    width: max-content;
+    height: 20px;
+    margin-left: 3em;
+    border: none;
+    background: transparent;
+    color: snow;
+    font-size: 1em;
+    font-family: var(--font-family_1);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1em;
+}
+.i_linkButton:first-of-type{
+    margin-left: 0;
+}
+.i_linkButton:hover{
+    text-decoration: underline;
+    color: #4CC9F0;
+}
+
+@media screen and (max-width: 991px) {
+    .i_linkButton{
+        margin-left: 1em;
+    }
+    .indexMenu_icon{
+        display: block;
+    }
+    .indexLinks_wrapper{
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        top: 0px;
+        background-color: #282828;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .index_animation-open{
+        animation: backInDown;
+        animation-duration: var(--animation-duration);
+        opacity: 1;
+        pointer-events: all;
+    }
+    .index_animation-close{
+        animation: backOutUp;
+        animation-duration: var(--animation-duration);
+        opacity: 0;
+        transition: opacity 0s linear var(--animation-duration);
+        pointer-events: none;
+    }
+    .indexLinks_wrapper>div{
+        width: fit-content;
+    }
+    .i_linkButton{
+        display: block;
+        width: 100%;
+        margin: 1em 0;
+        text-align: center;
+    }
+}

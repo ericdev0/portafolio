@@ -1,3 +1,4 @@
+<app-top-bar class="app-topBar"></app-top-bar>
 <div class="mainHeader">
     <div class="mH_profile_container container-xxl row">
 
@@ -31,17 +32,21 @@
            </div>
 
            <div class="mh_info_email">
-            <div class="mh_info_email_wrp">
-                <div class="mh_info_email_text">
-                     <p>Ponte en contacto</p>
-                     <h6>eric.frontenddev@gmail.com</h6>
-                </div>
-                 <div class="mh_info_email_icon">
-                     <div class="email_background"></div>
-                     <div class="email_svgIcon"></div>
-                 </div>
-             </div>
-             <h6>linkedin: www.linkedin.com/in/eric-dev-front</h6>
+                <a class="mh_info_link-1" href="mailto:eric.frontenddev@gmail.com">
+                    <div class="mh_info_email_wrp">
+                        <div class="mh_info_email_text">
+                            <p>Ponte en contacto</p>
+                            <h6>eric.frontenddev@gmail.com</h6>
+                        </div>
+                        <div class="mh_info_email_icon">
+                            <div class="email_background"></div>
+                            <div class="email_svgIcon"></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="mh_info_link-2" href="https://www.linkedin.com/in/eric-dev-front/">
+                    <h6>linkedin: www.linkedin.com/in/eric-dev-front</h6>
+                </a>
            </div>
         
         </div>
@@ -50,76 +55,107 @@
 
 <div class="mH_separator"><div></div></div>
 
+<div class="mainBody mainBody_intro">
+    <div class="mainBody_wrp container-xxl">
+        <div class="mainBody_title">
+            <div class="indexScrollTo habilidades"></div>
+            <p>mis cararacteristicas</p>
+            <h1>habilidades principales</h1>
+        </div>
+        
+        <div class="habilidades_container opening_animation">
+            <div class="habilidad_box">
+                <div class="habilidad_icon_wrp"><div class="hbd_icon_1"></div></div>
+                <div class="habilidad_text_wrp">
+                    <h1>maquetación</h1><br>
+                    <p>Creo vistas de referencia y prototipos en Adobe Illustrator o Figma</p>
+                </div>
+            </div>
+            <div class="habilidad_box">
+                <div class="habilidad_icon_wrp"><div class="hbd_icon_2"></div></div>
+                <div class="habilidad_text_wrp">
+                    <h1>Desarrollo web</h1><br>
+                    <p>Creo todo tipo de aplicaciones web e interfaces de usuario</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mH_separator mH_separator-2"><div></div></div>
+
 <div class="mainBody">
     <div class="mainBody_wrp container-xxl">
 
-        <div class="PersonalProject_parent_container">
-            <div class="PersonalProject_container">
-                <div class="PersonalProject_wrapper">
-                    <div class="PersonalProject_items" 
-                    [style.--PersonalProject_items-width]="ItemsContainerWidth"
-                    [style.--PersonalProject_items-width_center]="ItemsContainerWidthCenter"
-                    [style.--scrollPixeles]="scrollPixeles"
-                    >
-                        <div class="PersonalProject_items_wrp">
-                            <div class="ppjct_item">
-                                <div class="PersonalProject_img PersonalProject_point">
-                                    <div class="circle_item"></div>
+        <div class="mainBody_title mB_title">
+            <div class="indexScrollTo proyectos"></div>
+            <p>en desarrollo</p>
+            <h1>proyecto personal</h1>
+        </div>
+
+        <div class="opening_animation">
+            <div class="PersonalProject_parent_container">
+                <div class="PersonalProject_container">
+                    <div class="PersonalProject_wrapper">
+                        <div class="PersonalProject_items"
+                        [style.--PersonalProject_items-width]="ItemsContainerWidth"
+                        [style.--PersonalProject_items-width_center]="ItemsContainerWidthCenter"
+                        [style.--scrollPixeles]="scrollPixeles"
+                        >
+                            <div class="PersonalProject_items_wrp">
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img ppjct_prototype" src="../../../../assets/img/screenshots/captura1.png" data-ppjct_link="" alt="prototype desing - homepage">
                                 </div>
-                            </div>
-                            <div class="ppjct_item">
-                                <img class="PersonalProject_img" src="../../../../assets/img/screenshots/captura 1.png" alt="captura-1-png">
-                            </div>
-                            <div class="ppjct_item">
-                                <img class="PersonalProject_img" src="../../../../assets/img/screenshots/captura 1.png" alt="captura-1-png">
-                            </div>
-                            <div class="ppjct_item">
-                                <img class="PersonalProject_img" src="../../../../assets/img/screenshots/captura 1.png" alt="captura-1-png">
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img ppjct_prototype" src="../../../../assets/img/screenshots/captura2.png" data-ppjct_link="https://www.figma.com/proto/H8JyVyUyBtbxiHzx7ifzQU/Gitch?node-id=1251%3A1462&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" alt="prototype desing - event page">
+                                </div>
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img ppjct_prototype" src="../../../../assets/img/screenshots/captura3.png" data-ppjct_link="https://www.figma.com/proto/H8JyVyUyBtbxiHzx7ifzQU/Gitch?node-id=251%3A0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" alt="prototype desing - profile page">
+                                </div>
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img ppjct_prototype" src="../../../../assets/img/screenshots/captura4.png" data-ppjct_link="https://www.figma.com/proto/H8JyVyUyBtbxiHzx7ifzQU/Gitch?node-id=380%3A228&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" alt="prototype desing - team page">
+                                </div>
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img" src="../../../../assets/img/screenshots/progreso1.png" alt="development - homepage">
+                                </div>
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img" src="../../../../assets/img/screenshots/progreso2.png" alt="development - event page">
+                                </div>
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img" src="../../../../assets/img/screenshots/progreso3.png" alt="development - event groups">
+                                </div>
+
+                                <div class="ppjct_item">
+                                    <img class="PersonalProject_img" src="../../../../assets/img/screenshots/progreso4.png" alt="development - bracket generator">
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="PersonalProject_layer">
+                    <div class="PersonalProject_titles"><p>{{projectSegmentTitle}}</p></div>
+                </div>
+                <div class="PersonalProject_buttonscroll PP_bscroll-1"></div>
+                <div class="PersonalProject_buttonscroll PP_bscroll-2"></div>
             </div>
-            <div class="PersonalProject_buttonscroll PP_bscroll-1"></div>
-            <div class="PersonalProject_buttonscroll PP_bscroll-2"></div>
         </div>
 
-        <div class="CV_container">
-            <div class="subtitle_container">
-                <h5>Como hice el Curriculum vitae</h5>
-                <div class="subtitle_icon">
-                    <h6>tecnologia:</h6>
-                    <div class="CVchips_container">
-                        <mat-chip-list aria-label="Dog selection">
-                            <mat-chip>
-                              <mat-chip-avatar class="CVchip_img">
-                                  <img src="../../../../assets/img/adobe-illustrator.png" alt="adobe-illustrator_icon"/>
-                              </mat-chip-avatar>
-                              Adobe illustrator
-                            </mat-chip>
-                        </mat-chip-list>
-                    </div>
-                </div>
-            </div>
-            <div class="cv_Container">
-            
-                <div class="cv_images">
-                    <img class="cv_page1" src="../../../../assets/img/cv2022-1.png" alt="cv_page1">
-                    <img class="cv_page2" src="../../../../assets/img/cv2022-2.png" alt="cv_page2">
-                </div>
-            
-                <video class="cv_video" muted autoplay loop>
-                    <source src="../../../../assets/videos/51.mp4" type="video/mp4">
-                </video>
-            
-                <div class="cv_layer"></div>
-            
-            </div>
+        <div class="mainBody_title mB_title">
+            <div class="indexScrollTo ilustraciones"></div>
+            <p>ilustraciones</p>
+            <h1>iconos Y Assets</h1>
         </div>
 
         <div class="assets_set_container container-fluid row">
 
-            <div class="col-auto">
+            <div class="col-auto opening_animation">
                 <div class="asset_cntr">
                     <div class="asset_titulo_cntr">
                         <h6>asset #1</h6>
@@ -143,7 +179,7 @@
                 </div>
             </div>
 
-            <div class="col-auto">
+            <div class="col-auto opening_animation">
                 <div class="asset_cntr">
                     <div class="asset_titulo_cntr">
                         <h6>asset #2</h6>
@@ -167,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="col-auto">
+            <div class="col-auto opening_animation">
                 <div class="asset_cntr">
                     <div class="asset_titulo_cntr">
                         <h6>asset #3</h6>
@@ -191,7 +227,7 @@
                 </div>
             </div>
             
-            <div class="col-auto">
+            <div class="col-auto opening_animation">
                 <div class="asset_cntr">
                     <div class="asset_titulo_cntr">
                         <h6>asset #4</h6>
@@ -217,6 +253,59 @@
 
         </div>
 
+        <div class="mainBody_title mB_title">
+            <div class="indexScrollTo portafolio_y_cv"></div>
+            <p>¿como lo hice?</p>
+            <h1>portafolio y Curriculum</h1>
+        </div>
+
+        <div class="opening_animation">
+            <div class="CV_container">
+                <div class="subtitle_container">
+                    <h5>Como hice el Curriculum vitae</h5>
+                    <div class="subtitle_icon">
+                        <h6>tecnologia:</h6>
+                        <div class="CVchips_container">
+                            <mat-chip-list aria-label="Dog selection">
+                                <mat-chip>
+                                  <mat-chip-avatar class="CVchip_img">
+                                      <img src="../../../../assets/img/adobe-illustrator.png" alt="adobe-illustrator_icon"/>
+                                  </mat-chip-avatar>
+                                  Adobe illustrator
+                                </mat-chip>
+                            </mat-chip-list>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv_Container dialog_portfolio-CV">
+                
+                    <div class="cv_images">
+                        <img class="cv_page1" src="../../../../assets/img/cv2022-1.png" alt="cv_page1">
+                        <img class="cv_page2" src="../../../../assets/img/cv2022-2.png" alt="cv_page2">
+                    </div>
+                
+                    <video class="cv_video" muted autoplay loop>
+                        <source src="../../../../assets/videos/51.mp4" type="video/mp4">
+                    </video>
+                
+                    <div class="cv_layer"></div>
+                
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
+
+<div class="progress_circle_wrapper hide_progress_circle">
+    <div class="progress_circle_wrp2">
+        <svg class="progress_circle">
+            <circle class="back_circle" r="46" cy="50" cx="50"></circle>
+            <circle class="progress-circle_bar" r="46" cy="50" cx="50"
+            [attr.stroke-dasharray]="this.stroke_dasharray"></circle>
+            <circle class="front_circle" r="25" cy="50" cx="50"></circle>
+        </svg>
+        <div class="progress_icon"></div>
+    </div>
+</div>
+

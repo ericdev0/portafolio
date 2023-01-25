@@ -1,0 +1,11 @@
+a{
+    border: none;
+    text-decoration: none;
+    color: snow;
+    font-family: var(--font-family_1);
+    font-size: large;
+}
+a:hover{
+    color: crimson;
+    text-decoration: underline;
+}

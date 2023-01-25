@@ -1,0 +1,9 @@
+<ng-template #dialogContainer></ng-template>
+<ng-template #dialogVideo>
+    <video class="dialog_video"  autoplay controls>
+        <source [src]="data.url" type="video/mp4">
+    </video>
+</ng-template>
+<ng-template #dialogImage>
+    <img class="dialog_img" [src]="data.url" [alt]="data.idDialog">
+</ng-template>

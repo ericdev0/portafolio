@@ -1,0 +1,15 @@
+.dialog_video{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border: 1px solid gray;
+}
+.dialog_img{
+    width: 70vw;
+    max-width: 490px;
+    height: auto;
+    max-height: auto;
+    object-fit: contain;
+}
